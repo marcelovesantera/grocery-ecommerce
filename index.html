@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <title>Lista de Produtos</title>
+</head>
+
+<body>
+    <header>
+        <nav class="barraNav">
+            <h1 class="logoNav">Shop now</h1>
+        </nav>
+        <section class="estilosFiltroBusca">
+            <div class="divFiltrosCategorias">
+                <button class="estiloBotoesSelecionado" id="todosProdutos">Todos Produtos</button>
+                <button class="estiloBotoes" id="hortifruti">Hortifruti</button>
+                <button class="estiloBotoes" id="panificadora">Panificadora</button>
+                <button class="estiloBotoes" id="laticinios">Laticínios</button>
+            </div>
+            <div class="divBuscaPor">
+                <input type="text" placeholder="Pesquisa por" class="campoBusca">
+                <button class="botaoBuscar"><img src="./src/img/icon-busca.svg" alt="Ícone de lupa"
+                        class="iconeBotaoBuscar"></button>
+            </div>
+        </section>
+        <!-- <section class="barraPrecoTotal">
+            <div class="divAlerta">
+                <img src="./src/img/alert-circle.svg" alt="Ícone de alerta" class="iconeAlerta">
+                <p class="textoAlerta">Valor total dos produtos da sessão selecionada</p>
+            </div>
+            <div class="divPrecoTotal">
+            </div>
+        </section> -->
+    </header>
+
+    <main>
+        <div class="divMain">
+            <ul class="listaCards">
+            </ul>
+            <div class="divCarrinho">
+                <div class="barraTopCarrinho">
+                    <img class="iconCarinho" src="./src/img/icon_carrinho.svg" alt="icone carrinho de compras">
+                    <p class="textoCarrinho">Carrinho</p>
+                </div>
+                <div class="caixaCarrinho">
+                    <img class="iconeVazio" src="./src/img/shopping-bag.svg" alt="icone caixa compras vazia">
+                    <p class="textoCorpoCarrinho">Por enquanto não temos produtos no carrinho</p>
+                    <!-- <ul class="listaCarrinho">
+                        <li class="itemAdicionado">
+                            <div class="infosCarrinho">
+                                <img class="imgItemCarrinho" src="./src/img/banana.png" alt="foto item banana">
+                                <div class="infosItemCarrinho">
+                                    <h1 class="tituloItemCarrinho">Banana</h1>
+                                    <h2 class="secaoItemCarrinho">Hortifruti</h2>
+                                    <p class="precoItemCarrinho">R$ 2.00</p>
+                                </div>
+                            </div>
+                            <button class="iconeRemover">
+                                <img class="imgIconeRemover" src="./src/img/trash.svg" alt="ícone lixo">
+                            </button>
+                        </li>
+                    </ul> -->
+                </div>
+                <div class="barraPrecoTotal">
+                    <p class="barraQtd">Quantidade</p>
+                    <span class="textoQtd">0</span>
+                </div>
+                <div class="barraSomaTotal">
+                    <p class="textTotal">Total</p>
+                    <span class="spanSomaPreco">R$ 00.00</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./src/js/dataProdutos.js"></script>
+    <script src="./src/js/script.js"></script>
+</body>
+
+</html>
